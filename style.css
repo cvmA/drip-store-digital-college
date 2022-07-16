@@ -5,18 +5,21 @@
     margin: 0;
     padding: 0;
 }
-.header{
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-top: 45px;
 
+.content{
+    max-width: 1240px;
+    width: 95%;
+    margin: auto;
 }
-.first-main{
+.header{
+    margin-top: 34px;
+}
+.header-first{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
+    
 }
 .logo-div{
     font-size: 36px;
@@ -73,24 +76,24 @@
     text-decoration: none;
     color: #F5F5F5;
 }
-.menu{
+.header-menu{
     margin-top: 61px;
     margin-bottom: 30px;
     width: 500px;
 }
-.menu ul{
+.header-menu ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
 }
-.menu ul li a{
+.header-menu ul li a{
     font-size: 17px;
     font-weight: 400;
     text-decoration: none;
     color: #474747;
 }
-.menu ul li a:hover{
+.header-menu ul li a:hover{
     border-bottom: 2px solid #C92071;
     color: #C92071;
     font-weight: 700;
@@ -99,15 +102,12 @@
     display: flex;
     padding-left: 12%;
     padding-right: 10%;
-    height: 700px;
     background-color: #F5F5F5;
 }
 .main-title{
     width: 510px;
-    height: 370px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin-top: 124px;
 }
 .main-nav .main-title h2{
@@ -140,12 +140,10 @@
     text-decoration: none;
 }
 .first-sec{
-    padding-left: 12%;
-    padding-right: 12%;
+    margin-top: 38px;
     justify-content: space-between;
     flex-direction: row;
-    height: 400px;
-
+    
 }
 .first-sec-title{
     color: #474747;
@@ -154,7 +152,7 @@
 .cards-position{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 12px;
 }
 .card-container{
     width: 220px;
@@ -169,12 +167,12 @@
 .section-card{
     background-color: #D8E3F2;
     border-radius: 8px;
-    width: 405px;
+    width: 33.3%;
     height: 251px;
     display: flex;
     position: relative;
     overflow: hidden;
-
+    
 }
 .section-card img{
     position: absolute;
@@ -182,7 +180,7 @@
     bottom: 0;
     z-index: 0;
     /* border-radius: 0px 0px 8px 0px; */
-
+    
 }
 .section-card .card-container h3{
     background-color: #E7FF86;
@@ -232,7 +230,7 @@
     justify-content: space-between;
     margin-top: 30px;
     align-items: center;
-
+    
 }
 .section-logo{
     display: flex;
@@ -243,7 +241,7 @@
     font-weight: 700;
     font-size: 14px;
     color: #474747;
-
+    
 }
 .section-logo div img:first-child{
     height: 154px;
@@ -320,4 +318,14 @@
     font-weight: 700;
     font-size: 24px;
     color: #1F1F1F;
+}
+@media (max-width: 1240px) {
+    .cards-position{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .section-card{
+        width: 40%;
+    }
 }
