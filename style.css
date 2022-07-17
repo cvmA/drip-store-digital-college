@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
 .content{
     max-width: 1240px;
     width: 95%;
@@ -17,18 +16,16 @@
 .header-first{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    
+    align-items: center; 
 }
-.logo-div{
+.header-logo-div{
     font-size: 36px;
     font-weight: 600;
     color: #C92071;
     display: flex;
     align-items: center;
 }
-.logo-div img{
+.header-logo-div img{
     margin: 8px;
 }
 .search-bar-div{
@@ -53,15 +50,15 @@
     height: 24px;
     margin-right: 20px;
 }
-.sign-in{
+.sign-in-btn{
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.80px;
 }
-.sign-in a{
+.sign-in-btn a{
     color: #474747;
 }
-.login{
+.login-btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,19 +69,18 @@
     font-size: 14;
     font-weight: 700;
 }
-.login a{
+.login-btn a{
     text-decoration: none;
     color: #F5F5F5;
 }
 .header-menu{
     margin-top: 61px;
-    margin-bottom: 30px;
-    width: 500px;
+    margin-bottom: 32px;
 }
 .header-menu ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 32px;
     list-style-type: none;
 }
 .header-menu ul li a{
@@ -98,35 +94,36 @@
     color: #C92071;
     font-weight: 700;
 }
+@media(){
+
+}
 .main-nav{
     display: flex;
-    padding-left: 12%;
-    padding-right: 10%;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
 }
-.main-title{
-    width: 510px;
+.main-nav-title{
     display: flex;
     flex-direction: column;
     margin-top: 124px;
+    z-index: 1;
 }
-.main-nav .main-title h2{
+.main-nav .main-nav-title h2{
     color: #F6AA1C;
     font-weight: 700;
     font-size: 16px;
 }
-.main-nav .main-title h3{
+.main-nav .main-nav-title h3{
     font-weight: 800;
     font-size: 64px;
     color: #1F1F1F;
 }
-.main-nav .main-title h4{
+.main-nav .main-nav-title h4{
     color: #474747;
     font-weight: 400;
     font-size: 18px;
     line-height: 34px;
 }
-.main-nav .main-title a{
+.deals-btn{
     width: 220px;
     height: 48px;
     background-color: #C92071;
@@ -138,6 +135,10 @@
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
+}
+.main-nav-img {
+    display: flex;
+    z-index: 0;
 }
 .first-sec{
     margin-top: 38px;
